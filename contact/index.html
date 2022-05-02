@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="assets/css/custom.css" />
 
 	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome 6 icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,11 +35,39 @@
 
 <body>
 
-    <!-- navigation menu -->
-    <nav></nav>
 
-    <!-- header hero block -->
-    <header></header>
+    <nav class="container-menu menu-dark text-center-mobile menu-desktop">
+        <a href="#"><img src="../assets/img/website-logo.png" alt="Ciara McLoughlin, Web Designer"></a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="#" id="btn-cta"><span>Contact</span><i class="fas fa-arrow-right"></i></a></li>
+        </ul>
+        <div class="item-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <header class="hero-block hero-bg text-center-desktop text-center-mobile">
+    
+        <div class="container-text">
+            <h1 class="text-shadow">Realise your digital potential</h1>
+            <h2 class="text-shadow">Helping businesses of every size and type get the most from digital platforms </h2>
+        </div>
+
+        <div class="container-btn">
+            <a href="../portfolio/index.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i><span>View my work</span></a>  
+        </div>
+    
+        <div class="container-media">
+            <img src="assets/img/contact-index.jpg" alt="Ciara Mc Loughlin, Web Designer, contact from">
+        </div>
+    
+        <div class="container-overlay"></div>
+    
+    </header>
 
     <!-- main content with sections -->
     
@@ -75,7 +106,6 @@
                     <div class="item-btn">
                         <button id="btn-submit" type="submit"><span>Send</span><i class="fas fa-arrow-circle-right"></i></button> 
                     </div>
-                </div>
 
                 <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                 <!-- End contact form fields -->
@@ -83,12 +113,13 @@
             </form><!-- Contact form ends here -->
     </section><!-- End container for contact form -- 
              
-
     </main>
     
 
     
     <!-- footer -->
+    
+
     <footer class="theme-dark footer-1">
 
         <h2>Ciara Mc Loughlin, web designer</h2>
@@ -119,17 +150,18 @@
                 </a>
             </li>
 
-        
+         
          </ul>
          
          <p class="privacy"><a href="#">Privacy &amp; Legal</a></p>
-     </footer>
-       
-    <script src="assets/js/menu.js"></script>
+        
+    </footer>
+ 
+ <script src="../assets/js/menu.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
-    window.cookieconsent.initialise({
+ <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
   "palette": {
     "popup": {
       "background": "#000"
@@ -142,7 +174,7 @@
     "href": "https://ciaramcloughlin.github.io/privacy.html"
   }
 });
-    </script>
-    
+</script>
+
 </body>
 </html>
